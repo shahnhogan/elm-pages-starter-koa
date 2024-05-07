@@ -1,28 +1,28 @@
-# elm-pages-starter-express
+# elm-pages-starter-koa
 
-This is an example of using [elm-pages 3.0](https://github.com/dillonkearns/elm-pages-v3-beta) with [express.js](https://expressjs.com/).
+This is an example of using [elm-pages 3.0](https://github.com/dillonkearns/elm-pages) with [Koa](https://koajs.com/).
 
-You can see it running at <https://elm-pages-v3-express.fly.dev/>
+You can see it running at <https://elm-pages-v3-koa.fly.dev/>
 
-Source code is available at <https://github.com/blaix/elm-pages-starter-express>
+Source code is available at <https://github.com/shahnhogan/elm-pages-starter-koa>
 
 See discussion on elm-pages-v3 adapters at <https://github.com/dillonkearns/elm-pages/discussions/378>
 
 ## The important parts
 
-`adapters/express/adapter.mjs` runs at build time and puts the elm-pages renderer and express middleware and server into `dist-server/`.
-See <https://elm-pages-v3.netlify.app/docs/adapters/> for details on elm-pages adapters.
+`adapters/koa/adapter.mjs` runs at build time and puts the elm-pages renderer and koa middleware and server into `dist-server/`.
+See <https://elm-pages.com/docs/adapters/> for details on elm-pages adapters.
 
 After `npm run build`, the adapter will have generated the following files:
 
-`dist-server/server.mjs` - a node express server configured for elm-pages.
+`dist-server/server.mjs` - a node Koa server configured for elm-pages.
 This can be run directly with `node dist-server/server.mjs`.
 This repo is set up to do that via `npm start`.
 
-`dist-server/middleware.mjs` exports a default function that can be used to serve the elm-pages app via [express middleware](https://expressjs.com/en/guide/using-middleware.html).
-You can use this to integrate into your existing express service, or if the generated server doesn't work for your needs.
+`dist-server/middleware.mjs` exports a default function that can be used to serve the elm-pages app via [Koa middleware](https://koajs.com/#application).
+You can use this to integrate into your existing koa service, or if the generated server doesn't work for your needs.
 **Note:** Any routes you don't want handled by elm-pages must come _before_ this middleware.
-You will also need to point [express static middleware](https://expressjs.com/en/starter/static-files.html) at `dist`.
+You will also need to point [Koa static middleware](https://www.npmjs.com/package/koa-static) at `dist`.
 
 ## Setup Instructions
 
