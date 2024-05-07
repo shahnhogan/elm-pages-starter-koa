@@ -1,5 +1,10 @@
 # elm-pages-starter-koa
 
+## Credit
+This template is based on [nsadeh](https://github.com/nsadeh)'s code posted to the [elm-pages adapter discussion](https://github.com/dillonkearns/elm-pages/discussions/378#discussioncomment-9344037).
+
+## Overview
+
 This is an example of using [elm-pages 3.0](https://github.com/dillonkearns/elm-pages) with [Koa](https://koajs.com/).
 
 You can see it running at <https://elm-pages-v3-koa.fly.dev/>
