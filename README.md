@@ -1,7 +1,7 @@
 # elm-pages-starter-koa
 
 ## Credit
-This template is based on [nsadeh](https://github.com/nsadeh)'s code posted to the [elm-pages adapter discussion](https://github.com/dillonkearns/elm-pages/discussions/378#discussioncomment-9344037).
+This template is based on [nsadeh](https://github.com/nsadeh)'s Koa adapter posted to the [elm-pages adapter discussion](https://github.com/dillonkearns/elm-pages/discussions/378#discussioncomment-9344037).
 
 ## Overview
 
